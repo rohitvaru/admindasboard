@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './sidebar.css'
+import './LeftBar.css'
 import logo from '../../assets/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Sidebardata } from '../../Data/Data'

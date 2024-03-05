@@ -1,9 +1,11 @@
 import React from 'react'
 import './Maindash.css'
+import Cards from '../Cards/Cards'
 function Maindash() {
   return (
-    <div>
-          <h1> Dasboard</h1>
+    <div className="MainDash">
+      <h1>Dashboard</h1>
+      <Cards/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import './App.css'
 import Maindash from './componets/MainDash/Maindash'
-import Sidemanu from './componets/Sidebar/sidebar'
+import Sidemanu from './componets/SideManu/LeftBar'
 
 function App() {
 
