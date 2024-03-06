@@ -80,3 +80,50 @@
     bottom: 1.5rem;
     width: 100%;
 }
+.bars{
+    display: none;
+}
+@media screen and (max-width: 1200px){
+    .manuItem>span{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Sidebar{
+        position: fixed;
+        z-index: 9;
+        background: pink;
+        width: 50%;
+        height: 100%;
+    }
+    .manuItem>span{
+        display: block;
+    }
+    .logo{
+        display: block;
+        display: flex;
+        flex-direction:column;
+    }
+    .logo>span{
+        gap: 1rem;
+    }
+
+    .manu .manuItem:last-child{
+        position: relative;
+        margin-top: 6rem;
+    }
+    .bars{
+        font-size: large;
+        display: flex;
+        position: fixed;
+        top: 2rem;
+        background: pink;
+        z-index: 9;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

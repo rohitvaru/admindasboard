@@ -3,15 +3,14 @@
 /* .CompactCard card css is here */
 .CompactCard {
     display: flex;
-
     flex: 1;
     height: 7rem !important;
-    width: 12rem;
     border-radius: 0.7rem;
     color: white;
     position: relative;
     cursor: pointer;
     padding: 1rem;
+    gap: 3rem;
 }
 
 .CompactCard:hover {
@@ -65,7 +64,7 @@ svg.CircularProgressbar {
     font-weight: normal;
 }
 .detail>span:nth-child(3) {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: normal;
 }
 
@@ -73,16 +72,65 @@ svg.CircularProgressbar {
 
 /* ExpandedCard css start here */
 
-.ExpandedCard{
+.ExpandedCard {
     position: absolute;
-    left: 11rem;
-    top: 2rem;
+    left: 12rem;
+    top:1rem;
+    bottom: 1rem;
     width: 80%;
     height: 90vh;
-    z-index: 9;
+    z-index: 12;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
+}
+
+.xArrow {
+    align-self: flex-end;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.chartContainer {
+    width: 66%;
+}
+
+.ExpandedCard>span:nth-of-type(1) {
+    color: white;
+    font-weight: bolder;
+    font-size: 22px;
+    text-shadow: 0px 0px 15px white;
+}
+
+.ExpandedCard>span:nth-of-type(2) {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:1200px) {
+    .ExpandedCard{
+        top: 2rem;
+        height: 55vh;
+        left: 6rem;
+    }
+    .chartContainer{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .ExpandedCard{
+        top: 10rem;
+        width: 80%;
+        height: 44%;
+        left: 26px;
+
+    }
+    .xArrow{
+        align-self: flex-end;
+        /* margin-top: -4rem; */
+    }
 }

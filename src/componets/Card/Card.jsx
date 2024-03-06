@@ -117,7 +117,7 @@ const ExpandedCard = ({ param, setExpandee }) => {
             }}
             layoutId={param.id}
         >
-            <div>
+            <div className='xArrow'>
                 <FontAwesomeIcon icon={faCircleXmark} onClick={setExpandee} />
             </div>
             <span>{param.tittle}</span>
