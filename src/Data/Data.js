@@ -13,27 +13,27 @@ import img1 from '../assets/profile.png'
  //side bar data
  export const Sidebardata =[
     {
-        path:"/dashboard",
+        path:"dashboard",
         icons:faHome,
         heading:"Dashboard",
     },
     {
-        path:"/dashboard",
+        path:"Orders",
         icons:faClipboard,
         heading:"Orders",
     },
     {
-        path:"/customers",
+        path:"customers",
         icons:faUser,
         heading:"Customers",
     },
     {
-        path:"/aroducts",
+        path:"products",
         icons:faClipboard,
         heading:"Products",
     },
     {
-        path:"/analytics",
+        path:"analytics",
         icons:faChartPie,
         heading:"Analytics",
     },

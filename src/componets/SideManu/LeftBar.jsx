@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Sidebardata } from '../../Data/Data'
 import { faArrowRightFromBracket, faBars, faUser } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion'
-import { Link, Router } from 'react-router-dom'
+import { NavLink,Link, Router } from 'react-router-dom'
 
 
 const Sidemanu = () => {
@@ -51,17 +51,22 @@ const Sidemanu = () => {
                   setselected(index)
                 }}
               >
+                  <Link style={{
+                    textDecoration:'none',
+                    color:'black'
+                  }} to={item.path}>
                   <FontAwesomeIcon icon={item.icons} className='icons-width' />
                   <span>
                     {item.heading}
                   </span>
+                    </Link>
               </div>
             )
           })}
           <div className="manuItem">
             <FontAwesomeIcon icon={faArrowRightFromBracket} className='icons-width' />
           </div>
-        </div>
+          </div>
       </motion.div>
     </>
   )
